@@ -1,0 +1,21 @@
+name: gitleaks
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 4 * * *" # run once a day at 4 AM
+jobs:
+  scan:
+    name: gitleaks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+        continue-on-error: false
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_NOTIFY_USER_LIST: "@jinhezai-in,@lyyy0n" #当gitleaks-action检测到泄漏时应收到警报的 GitHub 帐户列表
+
