@@ -1,17 +1,8 @@
-ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
-ACCESS_KEY_SECRET=wJalrXUtnFEM
-SMTP_USERNAME=johndoe@example.com
-SMTP_PASSWORD=VerySecureSMTPPassword123!
-SMTP_SERVER=smtp.example.com
-SMTP_PORT=587
-SSN=123-45-6789
-CARD_NUMBER=4111111111111111
-CARD_HOLDER=John Doe
-EXPIRY_DATE=12/25
-CVV=123
-DB_USER=admin
-DB_PASSWORD=SuperSecurePassword123!
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=mydatabase
-API_KEY=abcdefghijklmnopqrstuvwxyz123456
+Password="P@ssw0rd123!"
+APIKey="abcdefghijklmnopqrstuvwxyz1234567890"
+DatabaseConnectionString="Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myP@ssw0rd;"
+Token="ghp_abcdefghijklmnopqrstuvwxyz1234567890"
+
+
+
+
